@@ -14,3 +14,6 @@ Normal ölüm ekranı
 
 Bitiş çizgisini eksik parayla geçincegelen ekran
 <img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 212645" src="https://github.com/user-attachments/assets/9bd14477-b525-49ea-92a6-79a92ca3955c" />
+
+Kazanma ekranı
+<img width="1919" height="1074" alt="Ekran görüntüsü 2026-01-02 212828" src="https://github.com/user-attachments/assets/63b08a4f-4d27-4710-9f14-952947e9bb45" />
