@@ -8,3 +8,6 @@ Hakımızda kısmı
 
 Bölüm seçme ekranı 
 <img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 212206" src="https://github.com/user-attachments/assets/ad4cb108-0761-4938-99f2-0e283bad4243" />
+
+Normal ölüm ekranı
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 212228" src="https://github.com/user-attachments/assets/aa87abf8-f6f1-471b-924a-79bb5fe1e4b2" />
