@@ -26,3 +26,7 @@ Kazanma ekranı
 <img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 215549" src="https://github.com/user-attachments/assets/bbe0614f-46d2-43ea-9a9f-9e9b1ea6cd49" />
 <img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 215420" src="https://github.com/user-attachments/assets/7fcd9163-ac81-40ea-94b7-58dfcd131063" />
 
+3.Bölüm
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 215704" src="https://github.com/user-attachments/assets/a84b090c-8945-40ce-b147-51889018ed1d" />
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 215439" src="https://github.com/user-attachments/assets/ced12c77-f2d4-4dfa-9912-b25f8be7d91a" />
+
