@@ -17,3 +17,8 @@ Bitiş çizgisini eksik parayla geçincegelen ekran
 
 Kazanma ekranı
 <img width="1919" height="1074" alt="Ekran görüntüsü 2026-01-02 212828" src="https://github.com/user-attachments/assets/63b08a4f-4d27-4710-9f14-952947e9bb45" />
+
+1.Bölüm
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 215637" src="https://github.com/user-attachments/assets/85c0cd22-44a1-499a-8a3f-0850d9ce4338" />
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-01-02 215400" src="https://github.com/user-attachments/assets/39ebf93b-24d7-4607-81fc-4608b74caa6d" />
+
