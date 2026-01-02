@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://cf3at4sh141ee"]
+
+[ext_resource type="AudioStream" uid="uid://ba266q3yt28d5" path="res://ASSS/SoundEffects/Video Project 1 (online-audio-converter.com).ogg" id="1_0hucp"]
+[ext_resource type="Script" uid="uid://bc0eijw4pf6uu" path="res://ses_manager.gd" id="1_bkiqp"]
+[ext_resource type="AudioStream" uid="uid://c32d3ekjippl3" path="res://ASSS/SoundEffects/coin-coin3.ogg" id="3_wacd8"]
+[ext_resource type="AudioStream" uid="uid://dn5wnmy3d2nd1" path="res://ASSS/SoundEffects/button-maximize_007.ogg" id="4_dsy33"]
+[ext_resource type="AudioStream" uid="uid://brgejleduvnx4" path="res://ASSS/SoundEffects/fall-gameover2.ogg" id="5_1ujhd"]
+[ext_resource type="AudioStream" uid="uid://30okfyqryd4q" path="res://ASSS/Music/retroindiejosh_air.ogg" id="6_1ujhd"]
+[ext_resource type="AudioStream" uid="uid://bt2x88jd48qxg" path="res://ASSS/Music/Level-RetroBeat.ogg" id="7_8533g"]
+
+[node name="SesManager" type="Node"]
+script = ExtResource("1_bkiqp")
+
+[node name="SesEnemy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_0hucp")
+volume_db = -17.627
+
+[node name="SesCoin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_wacd8")
+volume_db = -17.627
+
+[node name="SesButton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_dsy33")
+volume_db = -17.627
+
+[node name="SesFall" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_1ujhd")
+volume_db = -17.627
+
+[node name="SesMenü" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_1ujhd")
+volume_db = -22.915
+
+[node name="SesLevel" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_8533g")
+volume_db = -23.797

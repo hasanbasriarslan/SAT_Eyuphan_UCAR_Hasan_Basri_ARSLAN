@@ -1,0 +1,122 @@
+[gd_scene load_steps=5 format=3 uid="uid://br67vnjpgu02p"]
+
+[ext_resource type="Script" uid="uid://3dfa5cu777eh" path="res://bölümmenüsü.gd" id="1_ranvb"]
+[ext_resource type="FontFile" uid="uid://dwlly0q12c7t7" path="res://ASSS/YAZI TİPİ/Clickuper.ttf" id="2_lm0fw"]
+[ext_resource type="FontFile" uid="uid://clsv3v2vxvwmr" path="res://ASSS/YAZI TİPİ/FrancoisOne-Regular.ttf" id="3_6k4sn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_weaej"]
+bg_color = Color(0, 0, 0, 0)
+border_color = Color(0, 0, 0, 0)
+
+[node name="BÖLÜMMENÜSÜ" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ranvb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 1932.0
+offset_bottom = 1086.0
+color = Color(0.022648491, 0.16238901, 0.15187517, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 167.0
+offset_right = 1968.0
+offset_bottom = 518.0
+scale = Vector2(0.9319819, 1)
+theme_override_colors/font_color = Color(0.180125, 0.75, 0.022499979, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.42352942, 0.011764706, 1)
+theme_override_constants/shadow_offset_x = 13
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = ExtResource("2_lm0fw")
+theme_override_font_sizes/font_size = 153
+text = "BÖLÜM SEÇİNİZ"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 532.0
+offset_right = 437.0
+offset_bottom = 668.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.87516665, 0.89, 0, 1)
+theme_override_fonts/font = ExtResource("3_6k4sn")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxFlat_weaej")
+text = "1.BÖLÜM"
+flat = true
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 531.0
+offset_right = 821.0
+offset_bottom = 667.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.87516665, 0.89, 0, 1)
+theme_override_fonts/font = ExtResource("3_6k4sn")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxFlat_weaej")
+text = "2.BÖLÜM"
+flat = true
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 863.0
+offset_top = 529.0
+offset_right = 1199.0
+offset_bottom = 665.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.87516665, 0.89, 0, 1)
+theme_override_fonts/font = ExtResource("3_6k4sn")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxFlat_weaej")
+text = "3.BÖLÜM"
+flat = true
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 35.0
+offset_right = 385.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.87516665, 0.89, 0, 1)
+theme_override_fonts/font = ExtResource("3_6k4sn")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxFlat_weaej")
+text = "GERİ"
+flat = true
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 354.0
+offset_right = 1991.0
+offset_bottom = 510.0
+scale = Vector2(0.9319819, 1)
+theme_override_colors/font_color = Color(0.09221532, 0.8502966, 0.8460292, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.42352942, 0.011764706, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = ExtResource("2_lm0fw")
+theme_override_font_sizes/font_size = 40
+text = "BÖLÜMÜ TAMAMLAMAK İÇİN 
+5 COİN TOPLA VE BİTİŞE GİT"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

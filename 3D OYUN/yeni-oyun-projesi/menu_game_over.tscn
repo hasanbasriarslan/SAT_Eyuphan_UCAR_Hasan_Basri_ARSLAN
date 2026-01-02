@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcad23xr3tcpg"]
+
+[ext_resource type="Script" uid="uid://jjebhmxdppk7" path="res://menu_game_over.gd" id="1_bcjj4"]
+[ext_resource type="FontFile" uid="uid://dwlly0q12c7t7" path="res://ASSS/YAZI TİPİ/Clickuper.ttf" id="1_clmc2"]
+[ext_resource type="Texture2D" uid="uid://dkdarak186v65" path="res://ASSS/images/image-screen-gameover.png" id="2_bcjj4"]
+[ext_resource type="FontFile" uid="uid://clsv3v2vxvwmr" path="res://ASSS/YAZI TİPİ/FrancoisOne-Regular.ttf" id="3_oyw1m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcjj4"]
+bg_color = Color(0, 0, 0, 0)
+border_color = Color(0, 0, 0, 0)
+
+[node name="MenuGameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bcjj4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -11.0
+offset_right = 1938.0
+offset_bottom = 1093.0
+color = Color(0.3, 0.004999995, 0, 0.5764706)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 122.00001
+offset_top = 13.0
+offset_right = 2053.0
+offset_bottom = 365.0
+rotation = 0.08074381
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.12133322, 0, 0.91, 1)
+theme_override_constants/shadow_offset_x = 11
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("1_clmc2")
+theme_override_font_sizes/font_size = 121
+text = "       GAME OVER
+EKMEĞE PARAN YETMEDİ"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -93.0
+offset_top = 153.0
+offset_right = 1076.6063
+offset_bottom = 806.0
+texture = ExtResource("2_bcjj4")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 794.0
+offset_top = 709.0
+offset_right = 1175.4156
+offset_bottom = 844.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.87516665, 0.89, 0, 1)
+theme_override_fonts/font = ExtResource("3_oyw1m")
+theme_override_font_sizes/font_size = 81
+theme_override_styles/focus = SubResource("StyleBoxFlat_bcjj4")
+text = "ANA MENU"
+flat = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_right = 0.11400001
+anchor_bottom = 0.08400001
+offset_left = 721.08
+offset_top = 859.0
+offset_right = 1012.12
+offset_bottom = 905.27997
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.87516665, 0.89, 0, 1)
+theme_override_fonts/font = ExtResource("3_oyw1m")
+theme_override_font_sizes/font_size = 81
+theme_override_styles/focus = SubResource("StyleBoxFlat_bcjj4")
+text = "TEKRAR DENE"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

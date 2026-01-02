@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ba266q3yt28d5"
+path="res://.godot/imported/Video Project 1 (online-audio-converter.com).ogg-7650a62ac8b0c232b13fc1fab15a6b2b.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSS/SoundEffects/Video Project 1 (online-audio-converter.com).ogg"
+dest_files=["res://.godot/imported/Video Project 1 (online-audio-converter.com).ogg-7650a62ac8b0c232b13fc1fab15a6b2b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

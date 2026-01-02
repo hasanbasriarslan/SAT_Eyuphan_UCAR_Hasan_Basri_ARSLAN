@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1to861nrqp16"]
+
+[ext_resource type="FontFile" uid="uid://dwlly0q12c7t7" path="res://ASSS/YAZI TİPİ/Clickuper.ttf" id="1_oxmc6"]
+[ext_resource type="Script" uid="uid://ciqlp4w566rrv" path="res://manu_win.gd" id="1_usg70"]
+[ext_resource type="Texture2D" uid="uid://dxcutge872vh0" path="res://ASSS/images/image-screen-win.png" id="2_usg70"]
+[ext_resource type="FontFile" uid="uid://clsv3v2vxvwmr" path="res://ASSS/YAZI TİPİ/FrancoisOne-Regular.ttf" id="3_bbv56"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usg70"]
+bg_color = Color(0, 0, 0, 0)
+border_color = Color(0, 0, 0, 0)
+
+[node name="ManuWin" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_usg70")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -16.0
+offset_top = -17.0
+offset_right = 1938.0
+offset_bottom = 1098.0
+color = Color(0.1713438, 0.78271407, 0.63023853, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 31.0
+offset_right = 1927.0
+offset_bottom = 398.0
+rotation = 0.0012717581
+theme_override_colors/font_color = Color(0.99, 0.957, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.69895047, 0, 0.1738812, 1)
+theme_override_constants/shadow_offset_x = 26
+theme_override_constants/shadow_offset_y = 14
+theme_override_fonts/font = ExtResource("1_oxmc6")
+theme_override_font_sizes/font_size = 225
+text = "      YOU WİN!!"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -44.0
+offset_top = -37.0
+offset_right = 1876.0
+offset_bottom = 1043.0
+texture = ExtResource("2_usg70")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 889.0
+offset_right = 1201.0
+offset_bottom = 1067.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.88146555, 0, 0.12666377, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.21626668, 0.19200002, 1)
+theme_override_fonts/font = ExtResource("3_bbv56")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxFlat_usg70")
+text = "MAİN MENU"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

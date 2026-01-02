@@ -1,0 +1,93 @@
+[gd_scene load_steps=9 format=3 uid="uid://cv8xxyogh1ruk"]
+
+[ext_resource type="Environment" uid="uid://bmg80mjdxpy35" path="res://Kaynaklar/level_1_ortam.tres" id="1_nmjpi"]
+[ext_resource type="MeshLibrary" uid="uid://bgcxjut636ix8" path="res://Kaynaklar/word-block-v1.tres" id="2_xdadj"]
+[ext_resource type="PackedScene" uid="uid://c4eirgbd6tyww" path="res://coin2.tscn" id="3_xdadj"]
+[ext_resource type="PackedScene" uid="uid://bn2q73m6pvjlt" path="res://hud_1.tscn" id="4_7j8ne"]
+[ext_resource type="PackedScene" uid="uid://dvukqpfgyamdx" path="res://steve.tscn" id="5_7dov7"]
+[ext_resource type="PackedScene" uid="uid://bl15dv38xgrij" path="res://enemy.tscn" id="6_ehv2h"]
+[ext_resource type="PackedScene" uid="uid://n0m8eaxc6f8k" path="res://platform_3x_2.tscn" id="7_15wb7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1y8me"]
+size = Vector3(228.26367, 2.053711, 232.77905)
+
+[node name="level2" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.9988518, -0.02978898, -0.037521075, 0.0479084, 0.6210764, 0.7822844, 0, -0.7831837, 0.6217904, 0, 40.85792, 4.103897)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_nmjpi")
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("2_xdadj")
+cell_center_y = false
+collision_layer = 2
+collision_mask = 13
+data = {
+"cells": PackedInt32Array(65531, 7, 0, 65531, 8, 0, 65532, 7, 0, 65532, 8, 0, 65533, 7, 0, 65533, 8, 0, 65534, 7, 0, 65534, 8, 0, 65535, 7, 0, 65535, 8, 0, 0, 7, 0, 0, 8, 0, 1, 7, 0, 1, 8, 0, 2, 7, 0, 2, 8, 0, 3, 7, 0, 3, 8, 0, 4, 7, 0, 4, 8, 0, 5, 7, 0, 5, 8, 0, 6, 7, 0, 6, 8, 0, 7, 7, 0, 7, 8, 0, 65529, 8, 0, 65530, 8, 0, 65530, 7, 0, 65529, 7, 0, 65529, 6, 0, 65530, 6, 0, 65531, 6, 0, 65532, 6, 0, 65533, 6, 0, 65534, 6, 0, 65535, 6, 0, 0, 6, 0, 1, 6, 0, 2, 6, 0, 3, 6, 0, 4, 6, 0, 5, 6, 0, 6, 6, 0, 7, 6, 0)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="coin" type="Node3D" parent="."]
+
+[node name="Coin" parent="coin" instance=ExtResource("3_xdadj")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.8182464, 13.14949)
+
+[node name="Coin2" parent="coin" instance=ExtResource("3_xdadj")]
+
+[node name="Coin3" parent="coin" instance=ExtResource("3_xdadj")]
+
+[node name="Coin4" parent="coin" instance=ExtResource("3_xdadj")]
+
+[node name="Coin5" parent="coin" instance=ExtResource("3_xdadj")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.2678848, 16.871983)
+
+[node name="Fallzone" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22.742659, 0)
+collision_layer = 16
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fallzone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.52685547, 0)
+shape = SubResource("BoxShape3D_1y8me")
+
+[node name="HUD1" parent="." instance=ExtResource("4_7j8ne")]
+
+[node name="Steve" parent="." instance=ExtResource("5_7dov7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0113559, 15.147222)
+
+[node name="enemyes" type="Node3D" parent="."]
+
+[node name="Enemy1" parent="enemyes" instance=ExtResource("6_ehv2h")]
+transform = Transform3D(-0.088233724, 0, -0.9960998, 0, 1, 0, 0.9960998, 0, -0.088233724, -9.83703, 1.1781335, 13.768659)
+collision_layer = 8
+collision_mask = 2
+
+[node name="Enemy2" parent="enemyes" instance=ExtResource("6_ehv2h")]
+transform = Transform3D(0.088233635, 0, 0.9960998, 0, 1, 0, -0.9960998, 0, 0.088233635, -34.347954, 1.1662525, 15.298397)
+collision_layer = 8
+collision_mask = 2
+direction = Vector3(1, 0, 0)
+
+[node name="Enemy3" parent="enemyes" instance=ExtResource("6_ehv2h")]
+transform = Transform3D(-0.9960998, 0, 0.08823377, 0, 1, 0, -0.08823377, 0, -0.9960998, -0.8324518, 1.1403358, 16.233692)
+collision_layer = 8
+collision_mask = 2
+direction = Vector3(0, 0, -1)
+
+[node name="Enemy4" parent="enemyes" instance=ExtResource("6_ehv2h")]
+transform = Transform3D(0.08823381, 0, 0.9960998, 0, 1, 0, -0.9960998, 0, 0.08823381, 3.4401193, 0.98267704, 12.659651)
+collision_layer = 8
+collision_mask = 2
+direction = Vector3(1, 0, 0)
+
+[node name="Haraketli Platforms" type="Node3D" parent="."]
+
+[node name="Platform3x2" parent="Haraketli Platforms" instance=ExtResource("7_15wb7")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -34, 0, 15)
+a = Vector3(-34, 0, 15)
+b = Vector3(-16, 0, 15)
+
+[connection signal="body_entered" from="Fallzone" to="Steve" method="_on_fallzone_body_entered"]

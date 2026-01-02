@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=3 uid="uid://bk8usuq4r3qvb"]
+
+[ext_resource type="Script" uid="uid://781dlglnqhdq" path="res://control.gd" id="1_ee4bf"]
+[ext_resource type="FontFile" uid="uid://dwlly0q12c7t7" path="res://ASSS/YAZI TİPİ/Clickuper.ttf" id="2_kbped"]
+[ext_resource type="FontFile" uid="uid://clsv3v2vxvwmr" path="res://ASSS/YAZI TİPİ/FrancoisOne-Regular.ttf" id="3_fj5cn"]
+[ext_resource type="Texture2D" uid="uid://sjclorthuy5p" path="res://ASSS/WhatsApp Image 2025-12-23 at 17.48.35.jpeg" id="4_iy58a"]
+[ext_resource type="Texture2D" uid="uid://bfdoag6u5h5i8" path="res://ASSS/images/EYÜP.jpeg" id="5_fj5cn"]
+[ext_resource type="Texture2D" uid="uid://24bu52u1g7tf" path="res://ASSS/images/HASAN.jpeg" id="6_iy58a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6a6wx"]
+bg_color = Color(0, 0, 0, 0)
+border_color = Color(0, 0, 0, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ee4bf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 1932.0
+offset_bottom = 1086.0
+color = Color(0.10980392, 0.015686275, 0.4117647, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 105.99998
+offset_right = 480.67795
+offset_bottom = 200.11703
+rotation = 0.0012717581
+theme_override_colors/font_color = Color(0.99, 0.957, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.69895047, 0, 0.1738812, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 11
+theme_override_fonts/font = ExtResource("2_kbped")
+theme_override_font_sizes/font_size = 50
+text = "HAKKIMIZDA"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_right = 351.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.8862616, 0.88626146, 0.8862615, 1)
+theme_override_colors/font_pressed_color = Color(0.88146555, 0, 0.12666377, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.21626668, 0.19200002, 1)
+theme_override_fonts/font = ExtResource("3_fj5cn")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxFlat_6a6wx")
+text = "GERİ"
+flat = true
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 35.0
+offset_right = 1905.0
+offset_bottom = 1026.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_fj5cn")
+theme_override_font_sizes/font_size = 24
+text = "
+
+
+
+
+PROJE HİKAYESİ
+Robotun canı çok sıkıldı çünkü çocuklar evde aç karı tuz diyor 
+bizim robot cız, cız dediysem vidaları yağlanması lazım korkmayın.
+ Eee hayat zor robotun evini geçindirmesi lazım robota bu ekmek parası
+ için yardım et geçindirmesi gereken çoluğu çocuğu var unutma ekmek beş coin.
+
+
+
+PROJENİN YAPIMCILARI:
+Eyüphan UÇAR
+Hasan Basri ARSLAN
+
+Projede Katkıda Bulunanlar:                                                                   								                             Eyüphan UÇAR                             Hasan Basri ARSLAN                 Ahmet SİPHAİ instagram: ahme.tsph
+Ahmet SİPAHİ  Bu yakışıklının insta ahme.tsph"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1518.0
+offset_top = 725.0
+offset_right = 1797.6799
+offset_bottom = 1047.0
+texture = ExtResource("4_iy58a")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 879.0
+offset_top = 724.0
+offset_right = 1147.6799
+offset_bottom = 1050.6276
+texture = ExtResource("5_fj5cn")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1202.0
+offset_top = 725.0
+offset_right = 1472.0
+offset_bottom = 1053.125
+texture = ExtResource("6_iy58a")
+expand_mode = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bun665mickjc2"]
+
+[ext_resource type="PackedScene" uid="uid://eh8ib6qxjna" path="res://ASSS/MODEL/Sewev4.glb" id="1_47cfi"]
+
+[node name="Sewev4" instance=ExtResource("1_47cfi")]

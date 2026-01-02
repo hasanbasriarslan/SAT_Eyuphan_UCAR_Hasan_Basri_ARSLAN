@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn2q73m6pvjlt"]
+
+[ext_resource type="Script" uid="uid://cogloqtu3kw7k" path="res://hud_1.gd" id="1_hvr81"]
+[ext_resource type="Texture2D" uid="uid://bk5rndmced3nj" path="res://ASSS/images/AHMET.jpeg" id="2_hvr81"]
+[ext_resource type="FontFile" uid="uid://clsv3v2vxvwmr" path="res://ASSS/YAZI TİPİ/FrancoisOne-Regular.ttf" id="2_wj6e2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eqftq"]
+bg_color = Color(0, 0, 0, 0.3372549)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="HUD1" type="CanvasLayer"]
+script = ExtResource("1_hvr81")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 19.0
+offset_top = 17.0
+offset_right = 470.0
+offset_bottom = 107.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_eqftq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 25.0
+offset_top = 21.0
+offset_right = 94.0
+offset_bottom = 100.0
+texture = ExtResource("2_hvr81")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 110.0
+offset_top = 34.0
+offset_right = 141.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0.5882353, 0.44313726, 0, 1)
+theme_override_fonts/font = ExtResource("2_wj6e2")
+theme_override_font_sizes/font_size = 35
+text = "X"
+
+[node name="CoinsLaber" type="Label" parent="."]
+offset_left = 152.0
+offset_top = 24.0
+offset_right = 215.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0.5882353, 0.44313726, 0, 1)
+theme_override_fonts/font = ExtResource("2_wj6e2")
+theme_override_font_sizes/font_size = 50
+text = "##"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 232.0
+offset_top = 34.0
+offset_right = 315.0
+offset_bottom = 87.0
+theme_override_colors/font_color = Color(1, 0.18, 0.18, 1)
+theme_override_fonts/font = ExtResource("2_wj6e2")
+theme_override_font_sizes/font_size = 34
+text = "KİLL ="
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 334.0
+offset_top = 29.0
+offset_right = 403.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(1, 0.110000014, 0.110000014, 1)
+theme_override_fonts/font = ExtResource("2_wj6e2")
+theme_override_font_sizes/font_size = 41
+text = "##"
